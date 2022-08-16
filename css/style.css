@@ -1,0 +1,45 @@
+
+/* Cambiar el color de la página */
+html {
+    font-size: 16px; /* px quiere decir 'píxeles': el tamaño de la fuente base es ahora de 10 píxeles de altura */
+    font-family: "Open Sans", sans-serif; /* Este debe ser el resto del resultado que obtuviste de Google fonts */
+    background-color: #f2ae9a; /*cambio de color de fondo   */
+}
+
+/* Dar estilo al cuerpo del documento */
+  body {
+    width: 600px; /* esto hará que el cuerpo siempre tenga 600 píxeles de ancho. */
+    margin: 0 auto;
+    padding: 0 20px 20px 20px; /* para dar un poco de espacio alrededor del contenido.  */
+    border: 5px solid black; /* pone un borde de 5 píxeles */
+  }
+
+  p, li {
+    font-size: 16px;
+    line-height: 2;
+    letter-spacing: 1px;
+  }
+
+  /* Centrar la imagen */
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Utilización de Grids */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,auto-fit);
+    grid-gap: 5px;
+    justify-items: center;
+    align-items: center;
+  }
+  
+  .grid-item1 {
+    background: #f2ae9a;
+    text-align: center;
+    border: black 3px solid;
+    width: auto;
+    height: auto;
+  }
+  
