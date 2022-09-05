@@ -4,56 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <meta name="description" content="Somos un establecimiento creado para poder llegar a cada una a una de sus necesidades y dar a respuesta con eficiencia y calidad">
+    <meta name="keywords" content="restrepo, internet, bogota, documentos, impresiones, fotocopias, citas, turnos, impuestos, precios bajos "/>
     <!-- definicion de estilos y llamada a bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    <title> STARS NET</title>
+   
+     <title> STARS NET</title>
 </head>
 <body>
-    <header class="header">
+   <header class="header">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <img class="header__logo" src="./img/logo.png"alt="">
-        <nav class="header__nav">
-            <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="preguntas.html">Preguntas</a></li>
-                <li>Tarifas</li>
-                <li>Ubicacion</li>
-                <li>Contactenos</li>
-            </ul>
-        </nav>
-    </header>
-       <main class="main">
-    <div class="main__texto">
-        <h1>¡CONOZCANOS!</h1>
-        <P> Somos un establecimiento creado para poder llegar a cada una a una de sus necesidades y dar a respuesta con eficiencia y calidad.</P>
-        <div class="main__btn">Estamos Para Servirle</div>
-    </div>
-        <img class="main__img"src="./img/servimos.png" alt="">
-
-       </main>
-
-    <section class="tarjetas">
-        <div class="tarjetas__caja">
-            
-            <h2>Trae tus Datos</h2>
-            <p>Podemos Apoyarte Para Crear Tu Curriculo</p>
-            <img src="./img/ideas.png" alt="">
-
+        <div class="topnav" id="myTopnav">
+          <a href="index.html">Inicio</a>
+          <a href="preguntas/preguntas.html">Preguntas</a>
+          <a href="tarifas/tarifas.html">Tarifas</a>
+          <a href="ubicacion/ubicacion.html">Ubicacion</a>
+          <a href="contactenos/contactenos.html">Contactenos</a>
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
         </div>
-        <div class="tarjetas__caja">
-            
-            <h2>Trabajos de Calidad</h2>
-            <p>Todo lo consigues con nosotros a muy bajos precios </p>
-            <img src="./img/precios_bajos.png" alt="">
-        </div>
-        <div class="tarjetas__caja">
-            
-            <h2>Tu Llave</h2>
-            <p>Cargamos tus pasajes sin cobro adicional</p>
-            <img src="./img/sitp.jpg" alt="">
-        </div>
-    </section>
+    </header>  
+<script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+</script>
     
+ <!-- primer titulo  y centrado -->
+<div class="row  text-center">
+    <div class="col">
+        <main class="main">
+            <div class="main__texto">
+                <h1>¡CONOZCANOS!</h1>
+                <P> Somos un establecimiento creado para poder llegar a cada una a una de sus necesidades y dar a respuesta con eficiencia y calidad.</P>
+                <div class="main__btn">Estamos Para Servirle</div>
+            </div>
+                <img class="main__img"src="./img/servimos.png" alt="">
+        
+        </main>
+</div>
+</div>
+   
+<!--  Desarrollo de las consultas de los clientes -->
+    <div class="row tarjetas">
+        <div class="col">
+           <!-- <section class="tarjetas">-->
+                <div class="tarjetas__caja">
+                   <h2>Trae tus Datos</h2>
+                   <p>Podemos Apoyarte Para Crear Tu Curriculo</p>
+                   <img src="./img/ideas.png" alt="">
+                </div>
+        </div>
+        <div class="col">
+                <div class="tarjetas__caja">
+                   <h2>Trabajos de Calidad</h2>
+                   <p>Todo lo consigues con nosotros a muy bajos precios </p>
+                   <img src="./img/precios_bajos.png" alt="">
+                </div>
+        </div>
+        <div class="col">
+                <div class="tarjetas__caja">
+                   <h2>Tu Llave</h2>
+                   <p>Cargamos tus pasajes sin cobro adicional</p>
+                   <img src="./img/sitp.jpg" alt="">
+                </div>
+        </div>
+            <!-- </section> -->
+        </div>
+    </div>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>

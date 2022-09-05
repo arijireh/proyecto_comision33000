@@ -1,0 +1,123 @@
+
+
+
+/* Uso del Import */
+@import 'body.scss';
+
+/* Variables */
+$color_fondo: #f2ae9a;
+$border_botom:"3px solid rgb(231, 130, 130)";
+$ctr: "center";
+
+/* SCSS */
+
+.header {
+display: flex;
+justify-content: space-around;
+align-items: $ctr;
+padding: 1.5rem;
+background-color: $color_fondo;
+border-bottom: $border_botom;
+position: sticky;
+top: 0;
+   ul{
+    list-style-type: none;
+    li{
+        display: inline-block;
+        margin: 1rem 2rem;
+    }
+   }
+}
+
+.main{
+    display: flex;
+    align-items: $ctr;
+    justify-content: $ctr;
+    padding: 0rem 15rem;
+    gap: 5rem;
+    p {
+        width: 600px;
+        height: auto;
+    }
+    h1{
+        font-size: 45px;
+        margin: bottom 1.3rem;
+    }
+    &:main_img {
+        width: 15%;
+    }
+    btn{
+        display: inline-block;
+        background-color: rgb(226, 161, 172);
+        color: black;
+        padding: 0.5rem 2rem;
+        border-radius: 10px;
+        margin-top: 1rem;
+    }
+}
+
+.tarjetas{
+    display: flex;
+    justify-content: $ctr;
+    margin-bottom: 4rem;
+    margin-top: 4rem;
+    gap: 4rem;
+    text-align: $ctr;
+}
+
+.footer {
+display: flex;
+justify-content: space-around;
+align-items: $ctr;
+padding: 1.5rem;
+background-color: $color_fondo;
+border-bottom: $border_botom;
+}
+
+/* utilización de MAPS */
+$campos: ( /* declaro el mapa */
+    campo1: blue,
+    campo2: yellow,
+    campo3: red,
+    campo4: green
+);
+
+/* creo el bucle para usar los valores del mapa */
+@each $campos,$color in $campos {
+.lab--#{$campos}{
+ color: $color;
+ border-color: $color;
+  }
+}
+
+/* utilización de extends */
+.boton {
+   width: 150px;
+   height: 50px;
+   color: black;
+   border-radius: 20px;
+   border: 1px solid black;
+
+}
+
+.boton--aceptar{
+  @extend .boton;
+  background-color: green;
+  color: yellow;
+}
+
+.boton--cancelar{
+    @extend .boton;
+    background-color: red;
+    color: blue;
+}
+
+/* utilizacion de mixins */
+@mixin sizes ($width, $height) {
+      height: $height;
+      width: $width;
+}
+
+.boton--mixin {
+    @include sizes(150px,50px)
+}

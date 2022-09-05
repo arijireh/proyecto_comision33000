@@ -1,0 +1,98 @@
+@charset "UTF-8";
+/* Uso del Import */
+body {
+  font-family: 'Poppins', sans-serif; }
+
+/* Variables */
+/* SCSS */
+.header {
+  display: flex;
+  justify-content: space-around;
+  align-items: "center";
+  padding: 1.5rem;
+  background-color: #f2ae9a;
+  border-bottom: "3px solid rgb(231, 130, 130)";
+  position: sticky;
+  top: 0; }
+  .header ul {
+    list-style-type: none; }
+    .header ul li {
+      display: inline-block;
+      margin: 1rem 2rem; }
+
+.main {
+  display: flex;
+  align-items: "center";
+  justify-content: "center";
+  padding: 0rem 15rem;
+  gap: 5rem; }
+  .main p {
+    width: 600px;
+    height: auto; }
+  .main h1 {
+    font-size: 45px;
+    margin: bottom 1.3rem; }
+  .main:main_img {
+    width: 15%; }
+  .main btn {
+    display: inline-block;
+    background-color: #e2a1ac;
+    color: black;
+    padding: 0.5rem 2rem;
+    border-radius: 10px;
+    margin-top: 1rem; }
+
+.tarjetas {
+  display: flex;
+  justify-content: "center";
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+  gap: 4rem;
+  text-align: "center"; }
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: "center";
+  padding: 1.5rem;
+  background-color: #f2ae9a;
+  border-bottom: "3px solid rgb(231, 130, 130)"; }
+
+/* utilización de MAPS */
+/* creo el bucle para usar los valores del mapa */
+.lab--campo1 {
+  color: blue;
+  border-color: blue; }
+
+.lab--campo2 {
+  color: yellow;
+  border-color: yellow; }
+
+.lab--campo3 {
+  color: red;
+  border-color: red; }
+
+.lab--campo4 {
+  color: green;
+  border-color: green; }
+
+/* utilización de extends */
+.boton, .boton--aceptar, .boton--cancelar {
+  width: 150px;
+  height: 50px;
+  color: black;
+  border-radius: 20px;
+  border: 1px solid black; }
+
+.boton--aceptar {
+  background-color: green;
+  color: yellow; }
+
+.boton--cancelar {
+  background-color: red;
+  color: blue; }
+
+/* utilizacion de mixins */
+.boton--mixin {
+  height: 50px;
+  width: 150px; }
